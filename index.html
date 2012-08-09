@@ -11,24 +11,65 @@
 
   <div class="wrap">
 
-    <section class="intro">
-      <img src="img/CCC-logo.png">
-      <h1>The CCC Reset</h1>
-      <h4>Completely, Customizable, CSS Reset</h4>
-    
-      <hr>
+    <section>
 
-      <article>
-        <h2>A new kind of CSS reset</h2>
+      <article class="introduction">        
+        <header>
+          <h1>CCC-Reset</h1>
+          <h4>completely customizable css reset</h4>        
+        </header>
 
-        <p>There are a lot of great CSS resets out there. Some reset everything to give you a blank slate, some normalize various different browsers, some give you a few useful starting points.</p>
+        <p>Css resets have served the industry well for half a decade now. Injecting a little sanity into starting a css project.</p>
 
-        <p>The basic problem with any of these approaches is that is you reset everything you end up writing a lot of the same css every time your start a project. With a blank slate type reset you end up putting back in sensible defaults</p>
+        <p>But css resets have a problem. Because css resets wipe the slate clean a developer often needs to add a lot of the same type of css to every project.</p>
+
+        <p>CCC uses the power of <a href="http://sass-lang.com/">SASS</a> & <a href="http://compass-style.org/">Compass</a> to give developers a customizable starting point that can be tailored to any project.</p>
+      </article>
+
+      <article class="selling points">        
+        <header>
+          <h4>Three Reasons to love CCC</h4>
+        </header>
+
+        <ul>
+          <li>
+            <h5>Easy</h5>
+            <p>Simply drop one file into your sass folder, import it into your sass stylesheet and your ready to go.</p>
+          </li>
+          <li>
+            <h5>Quick</h5>
+            <p>CCC has a slew of sensible defaults so you can get stated with any project quickly without any setup.</p>
+          </li>
+          <li>
+            <h5>Customizable</h5>
+            <p>By adding just a few variables to the top of your sass stylesheet you can easily customize your reset to start you off on any project.</p>
+          </li>
+        </ul>
+      </article>
+
+      <article class="how-to">
+        <header>
+          <h4>How to</h4>
+        </header>
+
+        <p>To start using CCC you will first need to have SASS & Compass installed. An install guide for sass can be found <a href="http://sass-lang.com/tutorial.html">here</a> and install instructions for compass can be found <a href="http://compass-style.org/install/">here.</a></p>
+
+        <p>Next you need to get your hands on a copy of the infamous <code>_CCC-R.scss</code> file and place it in your sass directory. You can download that file right here.</p>
+
+        <a href="#">file download</a>
+
+        <p>When you have <code>_CCC-R.scss</code> safely in your sass folder you need to import it into your main stylesheet. This is easy to do, simply add this line to the top of your sass stylesheet.</p>
+
+        <pre>
+@import "CCC-R";</pre>
+        
+        <p>Thats it your ready to go. When your stylesheet complies you'll have a lovely reset that gives you a few sensible typographic niceties.</p>
+
       </article>
 
     </section>
 
-  </div>
+</div>
 
 </body>
 </html>

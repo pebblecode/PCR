@@ -34,7 +34,7 @@ h1, h2, h3, h4, h5, h6, p {
 
 h1, h2, h3, h4, h5, h6 {
   font-family: “Helvetica Neue”, Arial, Helvetica, sans-serif;
-  color: #1466b8;
+  color: #666666;
   font-weight: bold;
 }
 
@@ -166,18 +166,15 @@ table {
 }
 
 .wrap {
-  margin: 40px auto;
-  width: 90%;
-  max-width: 640px;
+  margin: 20px auto;
+  width: 400px;
+  background: #edf8fd;
 }
 
-.intro img {
-  float: left;
-  margin-right: 20px;
+h1, h2, h3, h4 {
+  text-align: center;
 }
-.intro h1, .intro h6 {
+
+h5 {
   margin-bottom: 0;
-}
-.intro h1 {
-  padding-top: 40px;
 }
