@@ -110,13 +110,30 @@ input, select {
 // Defaults
 // --------------------------------------------------------
 $remove-list-styles: false !default;
+$link-underline: none !default;
 
-//Remove list styles
-
-@if $remove-list-styles == true{
+// Remove list styles
+@if $remove-list-styles == true {
   ul, ol {
     list-style: none;
   }  
+}
+
+// edit link underlining
+@if $link-underline == none {
+  a:link{
+    text-decoration: none;
+  }
+}
+
+@if $link-underline == hover {
+  a:link{
+    text-decoration: none;
+  }
+
+  a:hover{
+    text-decoration: underline;
+  }
 }
 
 
