@@ -23,20 +23,21 @@ time, mark, audio, video {
   font: inherit;
   vertical-align: baseline;
 }
+
 /* HTML5 display-role reset for older browsers */
 article, aside, details, figcaption, figure, 
 footer, header, hgroup, menu, nav, section {
   display: block;
 }
+
 body {
   line-height: 1;
 }
-ol, ul {
-  list-style: none;
-}
+
 blockquote, q {
   quotes: none;
 }
+
 blockquote:before, blockquote:after,
 q:before, q:after {
   content: '';
@@ -52,6 +53,7 @@ q:before, q:after {
 ins {
   text-decoration: none;
 }
+
 del {
   text-decoration: line-through;
 }
@@ -71,7 +73,11 @@ table {
 // --------------------------------------------------------
 $remove-list-styles: false !default;
 $link-underline: none !default;
-$mark-ins-color: #FF9 !default;
+$mark-ins-color: empty !default;
+
+
+// Custom additions
+// --------------------------------------------------------
 
 // Remove list styles
 @if $remove-list-styles == true {
@@ -94,5 +100,11 @@ $mark-ins-color: #FF9 !default;
 
   a:hover{
     text-decoration: underline;
+  }
+}
+
+@if $mark-ins-color != empty {
+  mark, ins{
+    background-color: $mark-ins-color;
   }
 }

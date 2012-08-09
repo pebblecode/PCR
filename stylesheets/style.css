@@ -29,10 +29,6 @@ body {
   line-height: 1;
 }
 
-ol, ul {
-  list-style: none;
-}
-
 blockquote, q {
   quotes: none;
 }
@@ -61,16 +57,16 @@ table {
   border-spacing: 0;
 }
 
-ul, ol {
-  list-style: none;
-}
-
 a:link {
   text-decoration: none;
 }
 
 a:hover {
   text-decoration: underline;
+}
+
+mark, ins {
+  background-color: #ffff99;
 }
 
 body {
