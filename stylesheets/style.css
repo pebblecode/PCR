@@ -1,3 +1,7 @@
+/* ========================================================
+   Eric Meyer CSS Reset v2.0b1 | 201101 
+   http://meyerweb.com/eric/tools/css/reset/
+======================================================== */
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -19,7 +23,6 @@ time, mark, audio, video {
   vertical-align: baseline;
 }
 
-/* HTML5 display-role reset for older browsers */
 article, aside, details, figcaption, figure,
 footer, header, hgroup, menu, nav, section {
   display: block;
@@ -50,6 +53,14 @@ del {
 table {
   border-collapse: collapse;
   border-spacing: 0;
+}
+
+/* ========================================================
+   PCR "pebble custom reset" V 0.2.0
+   https://github.com/pebblecode/PCR
+======================================================== */
+ul, ol {
+  list-style: none;
 }
 
 a:link {

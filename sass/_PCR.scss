@@ -1,7 +1,7 @@
-// ========================================================
-// Eric Meyer CSS Reset v2.0b1 | 201101 
-// http://meyerweb.com/eric/tools/css/reset/
-// ========================================================
+/* ========================================================
+   Eric Meyer CSS Reset v2.0b1 | 201101 
+   http://meyerweb.com/eric/tools/css/reset/
+======================================================== */
 
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
@@ -24,7 +24,7 @@ time, mark, audio, video {
   vertical-align: baseline;
 }
 
-/* HTML5 display-role reset for older browsers */
+// HTML5 display-role reset for older browsers
 article, aside, details, figcaption, figure, 
 footer, header, hgroup, menu, nav, section {
   display: block;
@@ -65,16 +65,16 @@ table {
   border-spacing: 0;
 }
 
-// ========================================================
-// PCR "pebble custom reset" V0.0.2
-// ++++++++++++++++++++++++++++++++++++++++++++++++++++++++
-// https://github.com/pebblecode/PCR
-// ========================================================
 
-// Defaults
+/* ========================================================
+   PCR "pebble custom reset" V 0.2.0
+   https://github.com/pebblecode/PCR
+======================================================== */
+
+// Defaults (set to empty to skip style)
 // --------------------------------------------------------
-$remove-list-styles: false !default;
-$link-underline: none !default;
+$remove-list-styles: empty !default;
+$link-underline: empty !default;
 $ins-color: empty !default;
 $focus-outline: empty !default;
 $abbr-dfn-styles: empty !default;
@@ -84,7 +84,7 @@ $hr-styles: empty !default;
 // --------------------------------------------------------
 
 // Remove list styles
-@if $remove-list-styles == true {
+@if $remove-list-styles != empty{
   ul, ol {
     list-style: none;
   }  
