@@ -3,7 +3,7 @@ CCC-Reset V0.0.1
 
 CCS-reset "Completely Customizable Style Reset" 
 
-By Mark Durrant of [pebble {code}](http://pebblecode.com/)
+Created by [pebble {code}](http://pebblecode.com/)
 
 ### Dependencies
 
