@@ -18,7 +18,7 @@
 // $highlight-color: hsl(210,100,80); // mark element background color
 // $hr-border-style: lighten($base-type-color, 30) 1px dashed; // hr border-bottom style
 // $abbreviations-border-style: lighten($base-type-color, 30) 1px dotted; // abbreviations border-bottom style
-$remove-list-styles: true; // set true to remove list styles
+// $remove-list-styles: true; // set true to remove list styles
 
 
 
@@ -26,7 +26,7 @@ $remove-list-styles: true; // set true to remove list styles
 // CCS-reset "Completely Customizable Style Reset"
 // ========================================================
 
-@import "CCC-R";
+@import "PCR";
 
 
 

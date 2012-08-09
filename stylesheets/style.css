@@ -94,7 +94,7 @@ a:active {
 }
 
 ol, ul {
-  list-style: none;
+  padding-left: 19.2px;
 }
 
 abbr[title], dfn[title] {
