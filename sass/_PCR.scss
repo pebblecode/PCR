@@ -77,6 +77,8 @@ $remove-list-styles: false !default;
 $link-underline: none !default;
 $ins-color: empty !default;
 $focus-outline: empty !default;
+$abbr-dfn-styles: empty !default;
+$hr-styles: empty !default;
 
 // Custom additions
 // --------------------------------------------------------
@@ -119,3 +121,22 @@ $focus-outline: empty !default;
   }
 }
 
+// Add html5 doctor reset <abbr> & <dfn> styles
+@if $abbr-dfn-styles != empty{
+  abbr[title], dfn[title] {
+    border-bottom:1px dotted;
+    cursor:help;
+  }
+}
+
+// Add html5 doctor reset <hr> styles
+@if $hr-styles != empty{
+  hr {
+    display:block;
+    height:1px;
+    border:0;
+    border-top:1px solid #cccccc;
+    margin:1em 0;
+    padding:0;
+  }
+}

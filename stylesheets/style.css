@@ -68,6 +68,16 @@ ins {
   outline: 1px dotted grey;
 }
 
-body {
-  padding: 20px 10%;
+abbr[title], dfn[title] {
+  border-bottom: 1px dotted;
+  cursor: help;
+}
+
+hr {
+  display: block;
+  height: 1px;
+  border: 0;
+  border-top: 1px solid #cccccc;
+  margin: 1em 0;
+  padding: 0;
 }

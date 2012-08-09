@@ -6,6 +6,9 @@ $remove-list-styles: false;
 $link-underline: hover;
 $ins-color: #FF9;
 $focus-outline: 1px dotted grey;
+$abbr-dfn-styles: true;
+$hr-styles: true;
+
 
 // ========================================================
 // PCR "pebble custom reset"
@@ -17,7 +20,3 @@ $focus-outline: 1px dotted grey;
 // ========================================================
 // Main Styles
 // ========================================================
-
-body{
-	padding: 20px 10%;
-}
