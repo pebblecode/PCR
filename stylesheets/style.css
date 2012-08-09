@@ -39,11 +39,6 @@ q:before, q:after {
   content: none;
 }
 
-/* remember to define visible focus styles! 
-:focus {
-  outline: ?????;
-} */
-/* remember to highlight inserts somehow! */
 ins {
   text-decoration: none;
 }
@@ -65,8 +60,12 @@ a:hover {
   text-decoration: underline;
 }
 
-mark, ins {
+ins {
   background-color: #ffff99;
+}
+
+:focus {
+  outline: 1px dotted grey;
 }
 
 body {

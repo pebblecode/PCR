@@ -44,12 +44,14 @@ q:before, q:after {
   content: none;
 }
 
-/* remember to define visible focus styles! 
-:focus {
-  outline: ?????;
-} */
+// remember to define visible focus styles!
+// see below for a PCR option
+// :focus {
+//   outline: ?????;
+// } 
 
-/* remember to highlight inserts somehow! */
+// remember to highlight inserts somehow! 
+// see below for a PCR option
 ins {
   text-decoration: none;
 }
@@ -73,8 +75,8 @@ table {
 // --------------------------------------------------------
 $remove-list-styles: false !default;
 $link-underline: none !default;
-$mark-ins-color: empty !default;
-
+$ins-color: empty !default;
+$focus-outline: empty !default;
 
 // Custom additions
 // --------------------------------------------------------
@@ -103,8 +105,17 @@ $mark-ins-color: empty !default;
   }
 }
 
-@if $mark-ins-color != empty {
-  mark, ins{
-    background-color: $mark-ins-color;
+// Custom background color for ins elements
+@if $ins-color != empty {
+  ins{
+    background-color: $ins-color;
   }
 }
+
+// Custom outline for :focus
+@if $focus-outline != empty {
+  :focus {
+    outline: $focus-outline;
+  }
+}
+
