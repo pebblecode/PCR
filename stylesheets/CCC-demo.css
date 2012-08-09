@@ -1,0 +1,166 @@
+@charset "UTF-8";
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  font: inherit;
+  vertical-align: baseline;
+  color: #666666;
+  font-size: 16px;
+  line-height: 24px;
+  font-family: Georgia, Palatino, ” Palatino Linotype”, Times, “Times New Roman”, serif;
+}
+
+h1, h2, h3, h4, h5, h6, p {
+  margin-bottom: 16px;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: “Helvetica Neue”, Arial, Helvetica, sans-serif;
+  color: #666666;
+  font-weight: bold;
+}
+
+h1 {
+  font-size: 39.813px;
+  line-height: 48.273px;
+}
+
+h2 {
+  font-size: 33.178px;
+  line-height: 41.976px;
+}
+
+h3 {
+  font-size: 27.648px;
+  line-height: 36.501px;
+}
+
+h4 {
+  font-size: 23.04px;
+  line-height: 31.74px;
+}
+
+h5 {
+  font-size: 19.2px;
+  line-height: 27.6px;
+}
+
+::selection, ::-moz-selection {
+  background: #cce5ff;
+}
+
+hr {
+  display: block;
+  width: 100%;
+  border: none;
+  border-bottom: #b3b3b3 1px dashed;
+  margin: 16px 0;
+}
+
+a:link {
+  color: #0066cc;
+  text-decoration: none;
+}
+
+a:visited {
+  color: #3399ff;
+}
+
+a:hover {
+  color: #004c99;
+  text-decoration: underline;
+}
+
+a:active {
+  color: #001933;
+}
+
+ol, ul {
+  padding-left: 19.2px;
+}
+
+abbr[title], dfn[title] {
+  border-bottom: #b3b3b3 1px dotted;
+  cursor: help;
+}
+
+b, strong, dt {
+  font-weight: bold;
+}
+
+i, em, cite, dfn {
+  font-style: italic;
+}
+
+mark {
+  background-color: #cce5ff;
+  color: #595959;
+}
+
+ins {
+  background-color: #cce5ff;
+  text-decoration: none;
+}
+
+pre {
+  white-space: pre;
+  white-space: pre-wrap;
+  word-wrap: break-word;
+}
+
+pre, code, kbd, samp {
+  font-family: Menlo, Consolas, 'DejaVu Sans Mono', Monaco, 'Courier New', Courier, monospace;
+  font-size: 14.4px;
+}
+
+sub, sup {
+  font-size: 12px;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+
+sup {
+  top: -4.8px;
+}
+
+sub {
+  bottom: -1.6px;
+}
+
+del {
+  text-decoration: line-through;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}

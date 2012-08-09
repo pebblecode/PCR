@@ -1,0 +1,56 @@
+// ========================================================
+// CCC-reset Variables
+// ========================================================
+
+// $base-type-color: hsl(210,50,50); // base text color for the project
+// $base-font-size: 14px; // base font size for the project
+// $base-line-hieght: 24px; // base line height for the project
+// $base-font-family: Georgia, Palatino,” Palatino Linotype”, Times, “Times New Roman”, serif; // base font-stack for the project
+// $header-font-family: “Helvetica Neue”, Arial, Helvetica, sans-serif; // headings font-stack to use body font stack replace with "$base-font-family"
+$header-type-color: hsl(210,80,40); // header text color
+// $header-size-ratio: 1.2; // header size ratio. (for sensible results use a number between 1.1 & 1.4)  
+// $header-line-height-ratio: 1.15; // header line height ratio. (for sensible results use a number between 1.1 & 1.4)  
+// $link-type-color: hsl(210,100,40); // link text color
+// $link-type-color-visited: lighten($link-type-color, 20); // link text color when visted
+// $link-type-color-hover: darken($link-type-color, 10); // link text color on hover
+// $link-type-color-active: darken($link-type-color, 30); // link text color on active
+// $link-underline-on-hover: true; // set true to only underline links on hover
+// $highlight-color: hsl(210,100,80); // mark element background color
+// $hr-border-style: lighten($base-type-color, 30) 1px dashed; // hr border-bottom style
+// $abbreviations-border-style: lighten($base-type-color, 30) 1px dotted; // abbreviations border-bottom style
+$remove-list-styles: true; // set true to remove list styles
+
+
+
+// ========================================================
+// CCS-reset "Completely Customizable Style Reset"
+// ========================================================
+
+@import "CCC-R";
+
+
+
+// ========================================================
+// Main Styles
+// ========================================================
+
+.wrap {
+	margin: 40px auto;
+	width: 90%;
+	max-width: 640px;
+}
+
+.intro {
+	img {
+		float: left;
+		margin-right: 20px;
+	}
+
+	h1,h6 {
+		margin-bottom: 0;
+	}
+
+	h1{
+		padding-top: 40px;
+	}
+}

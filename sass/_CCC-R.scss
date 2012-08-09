@@ -1,0 +1,237 @@
+// ========================================================
+// CCC Reset "Completely Customizable CSS Reset"
+// By Mark Durrant of http://pebblecode.com/
+//
+// ++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+//
+// Based on Eric Meyer's CSS reset v2.0b1
+// http://meyerweb.com/eric/tools/css/reset/
+// ========================================================
+
+
+// Set defaults
+// ========================================================
+$base-type-color: hsl(0,0,40) !default; // base text color for the project
+$base-font-size: 16px !default; // base font size for the project
+$base-line-hieght: 24px !default; // base line height for the project
+$base-font-family: Georgia, Palatino,” Palatino Linotype”, Times, “Times New Roman”, serif !default; // base font-stack for the project
+$header-font-family: “Helvetica Neue”, Arial, Helvetica, sans-serif !default; // headings font-stack to use body font stack replace with "$base-font-family"
+$header-type-color: $base-type-color !default; // header text color
+$header-size-ratio: 1.2 !default; // header size ratio. (for sensible results use a number between 1.1 & 1.4)  
+$header-line-height-ratio: 1.15 !default; // header line height ratio. (for sensible results use a number between 1.1 & 1.4)  
+$link-type-color: hsl(210,100,40) !default; // link text color
+$link-type-color-visited: lighten($link-type-color, 20) !default; // link text color when visted
+$link-type-color-hover: darken($link-type-color, 10) !default; // link text color on hover
+$link-type-color-active: darken($link-type-color, 30) !default; // link text color on active
+$link-underline-on-hover: true !default; // set true to only underline links on hover
+$highlight-color: lighten($link-type-color, 50) !default; // mark element background color
+$hr-border-style: lighten($base-type-color, 30) 1px dashed !default; // hr border-bottom style
+$abbreviations-border-style: lighten($base-type-color, 30) 1px dotted !default; // abbreviations border-bottom style
+$remove-list-styles: false !default; // set true to remove list styles
+
+
+// the reset
+// ========================================================
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	outline: 0;
+	font: inherit;
+	vertical-align: baseline;
+
+
+// Set basic Typographic attributes
+// ========================================================
+	color: $base-type-color; // Set base type color 
+  font-size: $base-font-size; // Set base font size
+  line-height: $base-line-hieght; // set base line-height
+  font-family: $base-font-family; // set base font family
+}
+
+
+// Set general header styles
+// ========================================================
+h1, h2, h3, h4, h5, h6, p {
+  margin-bottom: $base-font-size; // set margin bottom on type elements
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: $header-font-family; //set header font family
+  color: $header-type-color;  //set header type color
+  font-weight: bold; // set all headers as bold
+}
+
+
+// Set header sizes based on "$header-size-ratio" & "$header-line-height-ratio"
+// ========================================================
+h1 {
+  font-size: $base-font-size * pow($header-size-ratio, 5);
+  line-height: $base-line-hieght * pow($header-line-height-ratio, 5);
+}
+
+h2 {
+  font-size: $base-font-size * pow($header-size-ratio, 4);
+  line-height: $base-line-hieght * pow($header-line-height-ratio, 4);
+}
+
+h3 {
+  font-size: $base-font-size * pow($header-size-ratio, 3);
+  line-height: $base-line-hieght * pow($header-line-height-ratio, 3);
+}
+
+h4 {
+  font-size: $base-font-size * pow($header-size-ratio, 2);
+  line-height: $base-line-hieght * pow($header-line-height-ratio, 2);
+}
+
+h5 {
+  font-size: $base-font-size * $header-size-ratio;
+  line-height: $base-line-hieght * $header-line-height-ratio;
+}
+
+
+// Set text selection color
+// ========================================================
+::selection, ::-moz-selection {
+  background: $highlight-color;
+}
+
+
+// Set hr styles
+// ========================================================
+hr{
+  display: block;
+  width: 100%;
+  border: none;
+  border-bottom: $hr-border-style;
+  margin: $base-font-size 0;
+}
+
+
+// Set link styles
+// ========================================================
+a:link{
+  color: $link-type-color;
+  @if $link-underline-on-hover == true {
+    text-decoration: none;
+  }
+}
+
+a:visited{
+  color: $link-type-color-visited;
+}
+
+a:hover{
+  color: $link-type-color-hover;
+  @if $link-underline-on-hover == true {
+    text-decoration: underline;
+  }
+}
+
+a:active{
+  color: $link-type-color-active;
+}
+
+
+// list styling
+// ========================================================
+ol, ul {
+  @if $remove-list-styles == true{
+    list-style: none;
+  }
+  @else{
+    padding-left: $base-font-size * 1.2;
+  }
+}
+
+
+// text-level styling
+// ========================================================
+abbr[title], dfn[title] {
+  border-bottom: $abbreviations-border-style;
+  cursor: help;
+}
+
+b, strong, dt{
+  font-weight: bold;
+}
+
+i, em, cite, dfn {
+  font-style: italic;
+}
+
+mark{
+  background-color: $highlight-color;
+  color: darken($base-type-color, 5);
+}
+
+ins{
+  background-color: $highlight-color;
+  text-decoration: none;
+}
+
+pre {
+  white-space: pre;
+  white-space: pre-wrap;
+  word-wrap: break-word;
+}
+
+pre, code, kbd, samp {
+  font-family: Menlo, Consolas, 'DejaVu Sans Mono', Monaco, 'Courier New', Courier, monospace;
+  font-size: $base-font-size * .9;
+}
+
+sub, sup {
+  font-size: $base-font-size * .75;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+
+sup {
+  top: -($base-font-size * .3);
+}
+
+sub {
+  bottom: -($base-font-size * .1);
+}
+
+del {
+  text-decoration: line-through;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+
+
+
+// table styling
+// ========================================================
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
