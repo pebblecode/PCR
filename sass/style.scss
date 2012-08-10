@@ -4,12 +4,12 @@
 
 // Set variables as 'false' or comment out to remove from reset.
 
-$remove-list-styles: true; // can be 'false' or 'true'
-$link-underline: hover; // can be 'false', 'none', or 'hover'
-$ins-color: #FF9; // can be any color
-$focus-outline: 1px dotted grey; // can be any outline property
-$abbr-dfn-styles: true; // can be 'false' or 'true'
-$hr-styles: true; // can be 'false' or 'true'
+$remove-list-styles: false; // can be 'false' or 'true'
+$link-underline: false; // can be 'false', 'none', or 'hover'
+$ins-color: false; // can be any color
+$focus-outline: false; // can be any outline property
+$abbr-dfn-styles: false; // can be 'false' or 'true'
+$hr-styles: false; // can be 'false' or 'true'
 
 
 // ========================================================

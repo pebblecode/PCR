@@ -11,9 +11,18 @@ PCR uses [SASS](http://sass-lang.com/) to compile a custom reset based on Eric M
 
 PCR requires [SASS](http://sass-lang.com/) if SASS is not already installed there are instillation instructions [here](http://sass-lang.com/tutorial.html)
 
-### Usage
+### Demo
 
-To use PCR follow these simple steps.
+To get the demo working locally.
+
+1. Clone the repro. `$ git clone git@github.com:pebblecode/PCR.git`
+2. Run `$ compass watch` to tell compass to auto compile your css as you make changes.
+3. Edit variables at the top of `/sass/style.scss` (See bellow for a list of variables.)
+4. Open `index.html`. Refresh to see changes to your reset as they are complied. 
+
+### Standard usage
+
+To use PCR in your own project.
 
 1. Copy `_PCR.scss` into your projects sass directory.
 2. Add the line `@import "PCR";` to your main .scss file.
