@@ -1,22 +1,24 @@
 // ========================================================
-// PCR Variables
+// PCR Variables (add PCR variables ABOVE '@import "PCR";')
 // ========================================================
 
-$remove-list-styles: true;
-$link-underline: hover;
-$ins-color: #FF9;
-$focus-outline: 1px dotted grey;
-$abbr-dfn-styles: true;
-$hr-styles: true;
+// Set variables as 'empty' or comment out to remove from reset.
+
+$remove-list-styles: true; // can be 'empty' or 'true'
+$link-underline: hover; // can be 'empty', 'none', or 'hover'
+$ins-color: #FF9; // can be any color
+$focus-outline: 1px dotted grey; // can be any outline property
+$abbr-dfn-styles: true; // can be 'empty' or 'true'
+$hr-styles: true; // can be 'empty' or 'true'
 
 
 // ========================================================
-// PCR "pebble custom reset"
+// PCR "pebble custom reset" (import PCR)
 // ========================================================
 
 @import "PCR";
 
 
 // ========================================================
-// Main Styles
+// Main Styles (Main project styles)
 // ========================================================

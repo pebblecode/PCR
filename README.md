@@ -20,11 +20,11 @@ To use PCR follow these simple steps.
 3. PCR is now ready to go. Without specifying any variables PCR will compile Eric Meyer's css reset with no additions.
 4. Add variables. To enable the PCR additions you needs to add some variables to your .scss file **above** `@import "PCR";`
 
-#### Variables
+### Variables
 
 The following variables can be added to your .scss file **above** `@import "PCR";` to give your reset additional rules. 
 
-##### `$remove-list-styles` 
+#### `$remove-list-styles` 
 Set to 'true' to add the following code to your reset.
 
 ```css
@@ -34,7 +34,7 @@ ul, ol {
 }
 ```
 
-##### `$link-underline` 
+#### `$link-underline` 
 Set to 'none' or 'hover' to add the following code to your reset.
 
 ```css
@@ -52,7 +52,7 @@ a:hover{
 }
 ```
 
-##### `$ins-color` 
+#### `$ins-color` 
 Set a color to add the following code to your reset.
 
 ```css
@@ -62,7 +62,7 @@ ins{
 }
 ```
 
-##### `$focus-outline` 
+#### `$focus-outline` 
 Set a outline property to add the following code to your reset.
 
 ```css
@@ -72,7 +72,7 @@ Set a outline property to add the following code to your reset.
 }
 ```
 
-##### `$abbr-dfn-styles` 
+#### `$abbr-dfn-styles` 
 Set to 'true' to add the following code to your reset.
 
 ```css
@@ -83,7 +83,7 @@ abbr[title], dfn[title] {
 }
 ```
 
-##### `$hr-styles` 
+#### `$hr-styles` 
 Set to 'true' to add the following code to your reset.
 
 ```css
