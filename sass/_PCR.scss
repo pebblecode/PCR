@@ -71,20 +71,20 @@ table {
    https://github.com/pebblecode/PCR
 ======================================================== */
 
-// Defaults (set to empty to skip style)
+// Defaults (set to false to skip style)
 // --------------------------------------------------------
-$remove-list-styles: empty !default;
-$link-underline: empty !default;
-$ins-color: empty !default;
-$focus-outline: empty !default;
-$abbr-dfn-styles: empty !default;
-$hr-styles: empty !default;
+$remove-list-styles: false !default;
+$link-underline: false !default;
+$ins-color: false !default;
+$focus-outline: false !default;
+$abbr-dfn-styles: false !default;
+$hr-styles: false !default;
 
 // Custom additions
 // --------------------------------------------------------
 
 // Remove list styles
-@if $remove-list-styles != empty{
+@if $remove-list-styles != false{
   ul, ol {
     list-style: none;
   }  
@@ -108,21 +108,21 @@ $hr-styles: empty !default;
 }
 
 // Custom background color for ins elements
-@if $ins-color != empty {
+@if $ins-color != false {
   ins{
     background-color: $ins-color;
   }
 }
 
 // Custom outline for :focus
-@if $focus-outline != empty {
+@if $focus-outline != false {
   :focus {
     outline: $focus-outline;
   }
 }
 
 // Add html5 doctor reset <abbr> & <dfn> styles
-@if $abbr-dfn-styles != empty{
+@if $abbr-dfn-styles != false{
   abbr[title], dfn[title] {
     border-bottom: 1px dotted;
     cursor: help;
@@ -130,7 +130,7 @@ $hr-styles: empty !default;
 }
 
 // Add html5 doctor reset <hr> styles
-@if $hr-styles != empty{
+@if $hr-styles != false{
   hr {
     display: block;
     height: 1px;
