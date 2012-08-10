@@ -15,8 +15,8 @@ PCR requires [SASS](http://sass-lang.com/). If SASS is not already installed the
 
 To get the demo working locally.
 
-1. Clone the repro. `$ git clone git@github.com:pebblecode/PCR.git`
-2. Run `$ compass watch` to tell compass to auto compile your css as you make changes.
+1. Clone the repo. `$ git clone git@github.com:pebblecode/PCR.git`
+2. Run `$ sass --watch sass/` to tell sass to auto compile your css as you make changes.
 3. Edit variables at the top of `/sass/style.scss` (See bellow for a list of variables.)
 4. Open `index.html`. Refresh to see changes to your reset as they are complied. 
 
