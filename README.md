@@ -24,7 +24,8 @@ To use PCR follow these simple steps.
 
 The following variables can be added to your .scss file **above** `@import "PCR";` to give your reset additional rules. 
 
-`$remove-list-styles` Set to 'true' to add the following code to your reset.
+##### `$remove-list-styles` 
+Set to 'true' to add the following code to your reset.
 
 ```css
 /* 'true' */
@@ -33,7 +34,8 @@ ul, ol {
 }
 ```
 
-`$link-underline` Set to 'none' or 'hover' to add the following code to your reset.
+##### `$link-underline` 
+Set to 'none' or 'hover' to add the following code to your reset.
 
 ```css
 /* 'none' */
@@ -50,7 +52,8 @@ a:hover{
 }
 ```
 
-`$ins-color` Set a color to add the following code to your reset.
+##### `$ins-color` 
+Set a color to add the following code to your reset.
 
 ```css
 /* 'yellow' */
@@ -59,7 +62,8 @@ ins{
 }
 ```
 
-`$focus-outline` Set a outline property to add the following code to your reset.
+##### `$focus-outline` 
+Set a outline property to add the following code to your reset.
 
 ```css
 /* '1px dotted grey' */
@@ -68,7 +72,8 @@ ins{
 }
 ```
 
-`$abbr-dfn-styles` Set to 'true' to add the following code to your reset.
+##### `$abbr-dfn-styles` 
+Set to 'true' to add the following code to your reset.
 
 ```css
 /* 'true' */
@@ -78,7 +83,8 @@ abbr[title], dfn[title] {
 }
 ```
 
-`$hr-styles` Set to 'true' to add the following code to your reset.
+##### `$hr-styles` 
+Set to 'true' to add the following code to your reset.
 
 ```css
 /* 'true' */
