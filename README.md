@@ -5,11 +5,11 @@ PCR V 0.2.0
 
 An addition to Eric Meyer's awesome [CSS Reset.](http://meyerweb.com/eric/tools/css/reset/)
 
-PCR uses [SASS](http://sass-lang.com/) to compile a custom reset based on Eric Meyer's reset with a few additions. 
+PCR uses [SASS](http://sass-lang.com/) to compile a custom reset based on Eric Meyer's reset with a few additions.
 
-### Dependencies 
+### Dependencies
 
-PCR requires [SASS](http://sass-lang.com/) if SASS is not already installed there are instillation instructions [here](http://sass-lang.com/tutorial.html)
+PCR requires [SASS](http://sass-lang.com/). If SASS is not already installed there are installation instructions [here](http://sass-lang.com/tutorial.html)
 
 ### Usage
 
@@ -18,14 +18,14 @@ To use PCR follow these simple steps.
 1. Copy `_PCR.scss` into your projects sass directory.
 2. Add the line `@import "PCR";` to your main .scss file.
 3. PCR is now ready to go. Without specifying any variables PCR will compile Eric Meyer's css reset with no additions.
-4. Add variables. To enable the PCR additions you needs to add some variables to your .scss file **above** `@import "PCR";`
+4. Add variables. To enable the PCR additions you need to add some variables to your .scss file, **above** `@import "PCR";`
 
 ### Variables
 
-The following variables can be added to your .scss file **above** `@import "PCR";` to give your reset additional rules. 
+The following variables can be added to your .scss file **above** `@import "PCR";`, to give your reset additional rules.
 
-#### `$remove-list-styles` 
-Set to 'true' to add the following code to your reset.
+#### `$remove-list-styles`
+Set to 'true' to add the following code to your reset:
 
 ```css
 /* 'true' */
@@ -34,8 +34,8 @@ ul, ol {
 }
 ```
 
-#### `$link-underline` 
-Set to 'none' or 'hover' to add the following code to your reset.
+#### `$link-underline`
+Set to 'none' or 'hover' to add the following code to your reset:
 
 ```css
 /* 'none' */
@@ -52,8 +52,8 @@ a:hover{
 }
 ```
 
-#### `$ins-color` 
-Set a color to add the following code to your reset.
+#### `$ins-color`
+Set a color to add the following code to your reset:
 
 ```css
 /* 'yellow' */
@@ -62,8 +62,8 @@ ins{
 }
 ```
 
-#### `$focus-outline` 
-Set a outline property to add the following code to your reset.
+#### `$focus-outline`
+Set an outline property to add the following code to your reset:
 
 ```css
 /* '1px dotted grey' */
@@ -72,8 +72,8 @@ Set a outline property to add the following code to your reset.
 }
 ```
 
-#### `$abbr-dfn-styles` 
-Set to 'true' to add the following code to your reset.
+#### `$abbr-dfn-styles`
+Set to 'true' to add the following code to your reset:
 
 ```css
 /* 'true' */
@@ -83,8 +83,8 @@ abbr[title], dfn[title] {
 }
 ```
 
-#### `$hr-styles` 
-Set to 'true' to add the following code to your reset.
+#### `$hr-styles`
+Set to 'true' to add the following code to your reset:
 
 ```css
 /* 'true' */
@@ -100,4 +100,4 @@ padding: 0;
 
 ### Credits
 
-Big thanks to [Eric Meyer](http://meyerweb.com/) And [html5doctor.com/](http://html5doctor.com/) 
+Big thanks to [Eric Meyer](http://meyerweb.com/) And [html5doctor.com/](http://html5doctor.com/)
