@@ -1,15 +1,17 @@
-@import url(https://fonts.googleapis.com/css?family=Lato:300italic,700italic,300,700);
 
 body {
   padding:50px;
-  font:14px/1.5 Lato, "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font: 15px/1.6 Georgia, Palatino,” Palatino Linotype”, Times, “Times New Roman”, serif;
   color:#777;
   font-weight:300;
 }
 
 h1, h2, h3, h4, h5, h6 {
-  color:#222;
+  color: #c09;
   margin:0 0 20px;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  margin-bottom: 0.5em;
+  margin-top: 30px;
 }
 
 p, ul, ol, table, pre, dl {
@@ -21,7 +23,9 @@ h1, h2, h3 {
 }
 
 h1 {
-  font-size:28px;
+  font-size: 48px;
+  margin-bottom: -20px;
+  color: #f09;
 }
 
 h2 {
@@ -32,10 +36,22 @@ h3, h4, h5, h6 {
   color:#494949;
 }
 
+ul,ol{
+  padding-left: 1.3em;
+}
+
+p{
+  margin-bottom: .5em;
+}
+
 a {
-  color:#39c;
+  color:#f09;
   font-weight:400;
   text-decoration:none;
+}
+
+a:hover{
+  text-decoration: underline;
 }
 
 a small {
@@ -58,17 +74,19 @@ blockquote {
 }
 
 code, pre {
-  font-family:Monaco, Bitstream Vera Sans Mono, Lucida Console, Terminal;
-  color:#333;
+  font-family: Monaco, Bitstream Vera Sans Mono, Lucida Console, Terminal;
+  font-weight: bold;
+  color: #444;
   font-size:12px;
-}
-
-pre {
   padding:8px 15px;
   background: #f8f8f8;  
   border-radius:5px;
   border:1px solid #e5e5e5;
   overflow-x: auto;
+}
+
+code{
+  padding: 3px 6px;
 }
 
 table {
@@ -99,6 +117,10 @@ header {
   width:270px;
   float:left;
   position:fixed;
+}
+
+header h1{
+  margin-bottom: 0;
 }
 
 header ul {
@@ -171,8 +193,8 @@ small {
 
 hr {
   border:0;
-  background:#e5e5e5;
-  height:1px;
+  border-bottom: 1px dashed #f9c;
+  height: 0;
   margin:0 0 20px;
 }
 
@@ -181,6 +203,10 @@ footer {
   float:left;
   position:fixed;
   bottom:50px;
+}
+
+footer p{
+  margin-bottom: 0;
 }
 
 @media print, screen and (max-width: 960px) {
