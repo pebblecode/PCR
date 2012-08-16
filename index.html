@@ -1,0 +1,153 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <title>PCR  by pebblecode</title>
+
+    <link rel="stylesheet" href="stylesheets/styles.css">
+    <link rel="stylesheet" href="stylesheets/pygment_trac.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+    <div class="wrapper">
+      <header>
+        <h1>PCR </h1>
+        <p>PCR &quot;pebble custom reset&quot;</p>
+
+        <p class="view"><a href="https://github.com/pebblecode/PCR">View the Project on GitHub <small>pebblecode/PCR</small></a></p>
+
+
+        <ul>
+          <li><a href="https://github.com/pebblecode/PCR/zipball/master">Download <strong>ZIP File</strong></a></li>
+          <li><a href="https://github.com/pebblecode/PCR/tarball/master">Download <strong>TAR Ball</strong></a></li>
+          <li><a href="https://github.com/pebblecode/PCR">View On <strong>GitHub</strong></a></li>
+        </ul>
+      </header>
+      <section>
+        <h1>PCR V 0.2.0</h1>
+
+<h3>"pebble custom reset"</h3>
+
+<p>An addition to Eric Meyer's awesome <a href="http://meyerweb.com/eric/tools/css/reset/">CSS Reset.</a></p>
+
+<p>PCR uses <a href="http://sass-lang.com/">SASS</a> to compile a custom reset based on Eric Meyer's reset with a few additions.</p>
+
+<h3>Dependencies</h3>
+
+<p>PCR requires <a href="http://sass-lang.com/">SASS</a>. If SASS is not already installed there are installation instructions <a href="http://sass-lang.com/tutorial.html">here</a></p>
+
+<h3>Demo</h3>
+
+<p>To get the demo working locally.</p>
+
+<ol>
+<li>Clone the repo. <code>$ git clone git@github.com:pebblecode/PCR.git</code>
+</li>
+<li>Run <code>$ sass --watch sass/</code> to tell sass to auto compile your css as you make changes.</li>
+<li>Edit variables at the top of <code>/sass/style.scss</code> (See bellow for a list of variables.)</li>
+<li>Open <code>index.html</code>. Refresh to see changes to your reset as they are complied. </li>
+</ol><h3>Standard usage</h3>
+
+<p>To use PCR in your own project.</p>
+
+<ol>
+<li>Copy <code>_PCR.scss</code> into your projects sass directory.</li>
+<li>Add the line <code>@import "PCR";</code> to your main .scss file.</li>
+<li>PCR is now ready to go. Without specifying any variables PCR will compile Eric Meyer's css reset with no additions.</li>
+<li>Add variables. To enable the PCR additions you need to add some variables to your .scss file, <strong>above</strong> <code>@import "PCR";</code>
+</li>
+</ol><h3>Variables</h3>
+
+<p>The following variables can be added to your .scss file <strong>above</strong> <code>@import "PCR";</code>, to give your reset additional rules.</p>
+
+<h4><code>$remove-list-styles</code></h4>
+
+<p>Set to 'true' to add the following code to your reset:</p>
+
+<div class="highlight"><pre><span class="c">/* 'true' */</span>
+<span class="nt">ul</span><span class="o">,</span> <span class="nt">ol</span> <span class="p">{</span>
+    <span class="k">list-style</span><span class="o">:</span> <span class="k">none</span><span class="p">;</span>
+<span class="p">}</span>
+</pre></div>
+
+<h4><code>$link-underline</code></h4>
+
+<p>Set to 'none' or 'hover' to add the following code to your reset:</p>
+
+<div class="highlight"><pre><span class="c">/* 'none' */</span>
+<span class="nt">a</span><span class="nd">:link</span><span class="p">{</span>
+  <span class="k">text-decoration</span><span class="o">:</span> <span class="k">none</span><span class="p">;</span>
+<span class="p">}</span>
+
+<span class="c">/* 'hover' */</span>
+<span class="nt">a</span><span class="nd">:link</span><span class="p">{</span>
+  <span class="k">text-decoration</span><span class="o">:</span> <span class="k">none</span><span class="p">;</span>
+<span class="p">}</span>
+<span class="nt">a</span><span class="nd">:hover</span><span class="p">{</span>
+  <span class="k">text-decoration</span><span class="o">:</span> <span class="k">underline</span><span class="p">;</span>
+<span class="p">}</span>
+</pre></div>
+
+<h4><code>$ins-color</code></h4>
+
+<p>Set a color to add the following code to your reset:</p>
+
+<div class="highlight"><pre><span class="c">/* 'yellow' */</span>
+<span class="nt">ins</span><span class="p">{</span>
+  <span class="k">background-color</span><span class="o">:</span> <span class="nb">yellow</span><span class="p">;</span>
+<span class="p">}</span>
+</pre></div>
+
+<h4><code>$focus-outline</code></h4>
+
+<p>Set an outline property to add the following code to your reset:</p>
+
+<div class="highlight"><pre><span class="c">/* '1px dotted grey' */</span>
+<span class="nd">:focus</span> <span class="p">{</span>
+  <span class="k">outline</span><span class="o">:</span> <span class="m">1px</span> <span class="k">dotted</span> <span class="n">grey</span><span class="p">;</span>
+<span class="p">}</span>
+</pre></div>
+
+<h4><code>$abbr-dfn-styles</code></h4>
+
+<p>Set to 'true' to add the following code to your reset:</p>
+
+<div class="highlight"><pre><span class="c">/* 'true' */</span>
+<span class="nt">abbr</span><span class="o">[</span><span class="nt">title</span><span class="o">],</span> <span class="nt">dfn</span><span class="o">[</span><span class="nt">title</span><span class="o">]</span> <span class="p">{</span>
+  <span class="k">border-bottom</span><span class="o">:</span> <span class="m">1px</span> <span class="k">dotted</span><span class="p">;</span>
+  <span class="k">cursor</span><span class="o">:</span> <span class="k">help</span><span class="p">;</span>
+<span class="p">}</span>
+</pre></div>
+
+<h4><code>$hr-styles</code></h4>
+
+<p>Set to 'true' to add the following code to your reset:</p>
+
+<div class="highlight"><pre><span class="c">/* 'true' */</span>
+<span class="nt">hr</span> <span class="p">{</span>
+<span class="k">display</span><span class="o">:</span> <span class="k">block</span><span class="p">;</span>
+<span class="k">height</span><span class="o">:</span> <span class="m">1px</span><span class="p">;</span>
+<span class="k">border</span><span class="o">:</span> <span class="m">0</span><span class="p">;</span>
+<span class="k">border-top</span><span class="o">:</span> <span class="m">1px</span> <span class="k">solid</span> <span class="m">#cccccc</span><span class="p">;</span>
+<span class="k">margin</span><span class="o">:</span> <span class="m">1em</span> <span class="m">0</span><span class="p">;</span>
+<span class="k">padding</span><span class="o">:</span> <span class="m">0</span><span class="p">;</span>
+<span class="p">}</span>
+</pre></div>
+
+<h3>Credits</h3>
+
+<p>Big thanks to <a href="http://meyerweb.com/">Eric Meyer</a> And <a href="http://html5doctor.com/">html5doctor.com/</a></p>
+      </section>
+      <footer>
+        <p>This project is maintained by <a href="https://github.com/pebblecode">pebblecode</a></p>
+        <p><small>Hosted on GitHub Pages &mdash; Theme by <a href="https://github.com/orderedlist">orderedlist</a></small></p>
+      </footer>
+    </div>
+    <script src="javascripts/scale.fix.js"></script>
+    
+  </body>
+</html>
